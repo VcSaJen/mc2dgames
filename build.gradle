@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'org.spongepowered.plugin' version '0.9.0'
+    id 'com.qixalite.spongestart2' version '4.0.0'
+}
+
+// This may not be required, but has solved issues in the past
+compileJava.options.encoding = 'UTF-8'
+
+group 'com.vcsajen'
+version '1.0.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+spongestart {
+    minecraft '1.12.2'
+}
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:7.1.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
