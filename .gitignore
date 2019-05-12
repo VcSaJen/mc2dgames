@@ -84,3 +84,6 @@ secring.gpg
 # Other #
 ##########
 *.exe.stackdump
+user.gradle
+usersettings.gradle
+sponges

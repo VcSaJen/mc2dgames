@@ -1,2 +1,5 @@
 rootProject.name = 'mc2dgames'
 
+if (file('usersettings.gradle').exists()) {
+    apply from: 'usersettings.gradle'
+}
